@@ -1,0 +1,21 @@
+environments:
+  address: http://localhost:8080/
+
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/chat
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
